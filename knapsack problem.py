@@ -18,7 +18,6 @@ The weights of these items:
 
 
 class Item(object):
-
     def __init__(self, n, v, w):
         self.name = n
         self.value = float(v)
@@ -34,7 +33,8 @@ class Item(object):
         return self.weight
 
     def __str__(self):
-        result = '<<< ' + self.name + ', ' + 'value: ' + str(int(self.value)) + ', ' + 'weight: ' + str(int(self.weight)) + ' >>>'
+        result = '<<< ' + self.name + ', ' + 'value: ' + str(int(self.value)) + ', ' + 'weight: ' + str(
+            int(self.weight)) + ' >>>'
         return result
 
 
@@ -51,7 +51,7 @@ def density(item):
 
 
 def OurItems():
-    names = ['Watch', 'Radio', 'Books', 'Sanitizer', 'Jacket', 'Flower','Gift','Candy']
+    names = ['Watch', 'Radio', 'Books', 'Sanitizer', 'Jacket', 'Flower', 'Gift', 'Candy']
     values = [120, 20, 20, 80, 150, 64, 40, 50]
     weights = [2, 3, 5, 8, 10, 5, 15, 5]
     Items = []
@@ -100,4 +100,3 @@ if 2 <= W <= 50:
     GreedyTest(W)
 else:
     print('your number is not in the range (2,50)')
-
